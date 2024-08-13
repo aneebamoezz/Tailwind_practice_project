@@ -1,19 +1,8 @@
-// const hamburger = document.querySelector("#hamburger");
-// const menu = document.querySelector("#menu");
-// const moon = document.querySelector("#moon");
-// const body = document.querySelector("body");
-// const hLinks = document.querySelectorAll("#hLink")
+const btn = document.getElementById('menu-btn');
+const nav = document.getElementById('menu');
 
-// hamburger.addEventListener("click", () => {
-//     menu.classList.toggle("hidden")
-// })
-
-// hLinks.forEach(link => {
-//     link.addEventListener("click", () => {
-//         menu.classList.toggle("hidden")
-//     })
-// })
-
-// moon.addEventListener("click", () => {
-//     body.classList.toggle("dark")
-// })
+btn.addEventListener('click', () =>{
+    btn.classList.toggle('open');
+    nav.classList.toggle('flex');
+    nav.classList.toggle('hidden')
+})
