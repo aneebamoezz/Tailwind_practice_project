@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./*.html,js'],
+  content: ['./*.html'],
   theme: {
     fontFamily:{
       crimson:["Crimson Text", "serif"],
