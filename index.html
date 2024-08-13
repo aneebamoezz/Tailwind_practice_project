@@ -39,8 +39,8 @@
             <!-- Mobile Menu -->
             <div x-data="{open: false}">
                 <template x-if="open" class="md:hidden">
-                        <div class="fixed flex flex-col items-center text-black space-y-6 font-bold bg-transparent sm:w-auto sm:self-center left-0 right-0 top-0 drop-shadow-md h-full">
-                            <img class="fixed object-cover h-auto w-auto" src="images/bg-modal.jpeg" alt="">
+                        <div class="fixed flex flex-col items-center text-black space-y-6 font-bold bg-transparent sm:w-auto sm:self-center left-0 right-0 top-0 drop-shadow-md">
+                            <img class="fixed object-cover h-full w-auto" src="images/bg-modal.jpeg" alt="">
                         </div>
                 </template>
                 <button x-on:click="open = !open" class="block hamburger md:hidden focus:outline-none">
