@@ -12,7 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
         rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.8/dist/alpine.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v1.9.8/dist/alpine.js"></script>
 </head>
 
 <body>
@@ -39,9 +39,10 @@
             <!-- Mobile Menu -->
             <div x-data="{open: false}">
                 <template x-if="open" class="md:hidden">
-                        <div class="fixed flex flex-col items-center text-black space-y-6 font-bold bg-transparent sm:w-auto sm:self-center left-0 right-0 top-0 drop-shadow-md">
-                            <img class="fixed object-cover h-full w-auto" src="images/bg-modal.jpeg" alt="">
-                        </div>
+                    <div
+                        class="fixed flex flex-col items-center text-black space-y-6 font-bold bg-transparent sm:w-auto sm:self-center left-0 right-0 top-0 drop-shadow-md">
+                        <img class="fixed object-cover" src="images/bg-modal.jpeg" alt="">
+                    </div>
                 </template>
                 <button x-on:click="open = !open" class="block hamburger md:hidden focus:outline-none">
                     <span class="hamburger-top"></span>
@@ -49,7 +50,8 @@
                     <span class="hamburger-bottom"></span>
                 </button>
                 <div x-show="open" x-transition>
-                    <div class="fixed flex flex-col rounded-lg items-center text-black self-end py-8 mt-4 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                    <div
+                        class="fixed flex flex-col rounded-lg items-center text-black self-end py-8 mt-4 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
                         <a href="#">Pricing</a>
                         <a href="#">Product</a>
                         <a href="#">About Us</a>
